@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Whole App */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidenav fixed height (full page height) */
+.app-sidenav {
+  width: 220px;
+  background-color: #f4f4f4;
+  border-right: 1px solid #ccc;
+  padding: 20px 10px;
+  overflow-y: auto;
+}
+
+/* Main right side (header + content + footer) */
+.app-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Header at top of main content */
+.app-header {
+  height: 60px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Router outlet content area */
+.app-page-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Footer at bottom */
+.app-footer {
+  height: 40px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
